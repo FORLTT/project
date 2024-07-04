@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <style>
+        .souce_box{
+            width: 456px;
+            margin: 100px auto 0;
+            font-weight: bold;
+            font-size: 20px;
+            color: #bda690;
+            display: flex;
+            justify-content: space-between;
+        }
+        .grid{
+            width: 456px;
+            height: 456px;
+            background: #bbada0;
+            border: 7px solid #bbada0;
+            border-radius: 10px;
+            margin: 20px auto 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .grid div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin: 7px;
+            border-radius: 3px;
+            background: #eee4de;
+            color: gray;
+            font-weight: bold;
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="souce_box">
+        <div>
+            步数：<span class="score">0</span>
+        </div>
+        <div class="result"></div>
+    </div>
+    <div class="grid"></div>
+</body>
+<script src="./index.js"></script>
+</html>
