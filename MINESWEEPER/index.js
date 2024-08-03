@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if(i < width * width - width && !isLeftEdge && shuffledArray[i - 1 + width].includes('bomb')) total++  //目标点左下
                 if(i > width - 1 && !isRightEdge && shuffledArray[i + 1 - width].includes('bomb')) total++ //目标点右上
                 if(i < width * width - width && !isRightEdge && shuffledArray[i + 1 + width].includes('bomb')) total++  //目标点右下
-                squares[i].setAttribute('data', total)
+                // squares[i].setAttribute('data', total)
                 numberArray[i] = total
             } else {
                 numberArray[i] = -1
